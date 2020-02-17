@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -J Pytorch_gpu                         # Job name
+#SBATCH -o Pytorch_gpu_%j.out                  # Name of stdout output log file (%j expands to jobID)
+#SBATCH -e Pytorch_gpu_%j.err                  # Name of stderr output log file (%j expands to jobID)
+#SBATCH -N 1                           # Total number of nodes requested
+#SBATCH -n 8                             # Total number of cores requested
+#SBATCH --mem=65536m                    # Total amount of (real) memory requested (per node)
+#SBATCH -t 768:00:00                           # Time limit (hh:mm:ss)
+#SBATCH --partition=frazier             # Request partition for resource allocation
+#SBATCH --gres=gpu:1                       # Specify a list of generic consumable resources (per node)
+cd /home/yz2547; ./BoTorch_Tests/EI_tests/Pytorch_gpu.sh
