@@ -1,0 +1,98 @@
+==2031== NVPROF is profiling process 2031, command: /home/yz2547/.conda/envs/yz2547/bin/python /home/yz2547/BoTorch_Tests/GP_fitting/BoTorch_gpu.py
+0  th iterations time is  7.289963245391846
+1  th iterations time is  7.872281551361084
+==2031== Profiling application: /home/yz2547/.conda/envs/yz2547/bin/python /home/yz2547/BoTorch_Tests/GP_fitting/BoTorch_gpu.py
+==2031== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:    9.77%  3.1195ms      1036  3.0110us  2.1760us  4.4800us  _ZN2at6native13reduce_kernelILi512ENS0_8ReduceOpIfNS0_14func_wrapper_tIfZNS0_15sum_kernel_implIfffEEvRNS_14TensorIteratorEEUlffE_EEjfLi4EEEEEvT0_
+                    7.08%  2.2596ms      1776  1.2720us  1.1830us  1.6000us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_15mul_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS4_RKT_EUliE0_EEviT1_
+                    7.05%  2.2515ms      1770  1.2720us  1.1520us  1.6000us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_15add_kernel_cudaERNS_14TensorIteratorEN3c106ScalarEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS4_RKT_EUliE0_EEviT1_
+                    6.33%  2.0205ms      1182  1.7090us  1.3440us  2.4320us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_15add_kernel_cudaERNS_14TensorIteratorEN3c106ScalarEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS4_RKT_EUliE2_EEviT1_
+                    6.24%  1.9937ms      1332  1.4960us  1.2800us  2.5600us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_15mul_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SB_EUliE_EEviT1_
+                    4.05%  1.2944ms      1064  1.2160us  1.1200us  1.5040us  [CUDA memcpy DtoD]
+                    3.31%  1.0583ms       956  1.1060us     992ns  1.4400us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_16fill_kernel_cudaERNS_14TensorIteratorEN3c106ScalarEENKUlvE_clEvENKUlvE2_clEvEUlvE_EEvS4_RKT_EUliE0_EEviT1_
+                    3.08%  983.23us       444  2.2140us  1.5360us  3.1360us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_15mul_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SB_EUliE1_EEviT1_
+                    2.77%  885.50us       615  1.4390us  1.2160us  2.2080us  [CUDA memcpy DtoH]
+                    2.60%  831.13us       370  2.2460us  1.8560us  3.1680us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_15div_kernel_cudaERNS_14TensorIteratorEENKUlvE0_clEvENKUlvE2_clEvEUlffE_EEvS4_RKT_EUliE2_EEviT1_
+                    2.57%  820.26us       518  1.5830us  1.3760us  2.1440us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_15mul_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS4_RKT_EUliE2_EEviT1_
+                    2.51%  800.73us       711  1.1260us  1.0550us  1.6960us  [CUDA memcpy HtoD]
+                    2.40%  766.21us       444  1.7250us  1.3760us  2.1440us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_15neg_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlfE_EEvS4_RKT_EUliE2_EEviT1_
+                    2.12%  677.18us       370  1.8300us  1.6000us  2.5920us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_21copy_device_to_deviceERNS_14TensorIteratorEbENKUlvE_clEvENKUlvE2_clEvEUlfE_EEvS4_RKT_EUliE2_EEviT1_
+                    1.94%  619.33us       296  2.0920us  1.9200us  2.8160us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_15add_kernel_cudaERNS_14TensorIteratorEN3c106ScalarEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SD_EUliE1_EEviT1_
+                    1.83%  582.91us       444  1.3120us  1.1520us  1.4720us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_15neg_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlfE_EEvS4_RKT_EUliE0_EEviT1_
+                    1.82%  581.28us       444  1.3090us  1.1520us  1.5670us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_21copy_device_to_deviceERNS_14TensorIteratorEbENKUlvE_clEvENKUlvE2_clEvEUlfE_EEvS4_RKT_EUliE0_EEviT1_
+                    1.79%  572.00us       370  1.5450us  1.4080us  1.9520us  void kernelPointwiseApply2<softPlusupdateOutput_functor<float>, float, float, unsigned int, int=1, int=1>(OffsetInfo<softPlusupdateOutput_functor<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, float, float)
+                    1.76%  562.97us       222  2.5350us  2.4310us  3.2320us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_18lgamma_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE0_clEvEUlfE_EEvS4_RKT_EUliE2_EEviT1_
+                    1.76%  560.32us       370  1.5140us  1.3430us  2.1440us  void kernelPointwiseApply3<softPlusupdateGradInput_functor<float>, float, float, float, unsigned int, int=1, int=1, int=1>(OffsetInfo<softPlusupdateGradInput_functor<float>, float, unsigned int>, OffsetInfo<float, float, int=1>, OffsetInfo<float, float, int=1>, float, float)
+                    1.72%  550.53us       150  3.6700us  3.3920us  4.5120us  void at::native::reduce_kernel<int=512, at::native::ReduceOp<float, at::native::MeanOps<float, float>, unsigned int, float, int=4>>(float)
+                    1.72%  549.41us       222  2.4740us  2.2720us  3.1040us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_15div_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE0_clEvEUlfE_EEvS4_RKT_EUliE1_EEviT1_
+                    1.68%  537.50us       222  2.4210us  2.1760us  3.1040us  void at::native::triu_tril_kernel<float, int, bool=0>(at::cuda::detail::TensorInfo<float, int>, int, long, long)
+                    1.63%  520.35us       296  1.7570us  1.5040us  2.2080us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_15log_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE0_clEvEUlfE_EEvS4_RKT_EUliE2_EEviT1_
+                    1.55%  494.65us       148  3.3420us  3.2640us  3.9680us  void kernelReduceAll<unsigned char, unsigned int, long, thrust::identity<long>, ReduceMin<long>, int=1>(TensorInfo<unsigned char, unsigned int>, unsigned int, long, long, thrust::identity<long>, long*)
+                    1.40%  447.97us       296  1.5130us  1.2800us  2.1760us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_15div_kernel_cudaERNS_14TensorIteratorEENKUlvE0_clEvENKUlvE2_clEvEUlffE_EEvS4_RKT_EUliE0_EEviT1_
+                    1.35%  430.01us        74  5.8100us  5.7280us  7.4560us  void trsv_lt_exec<float, unsigned int=32, unsigned int=32, unsigned int=4, bool=0, bool=0>(int, float const *, int, float*, int, int*)
+                    1.32%  420.93us        74  5.6880us  5.5040us  7.2640us  void trsm_ln_kernel<float, unsigned int=32, unsigned int=32, unsigned int=4, bool=0>(int, int, float const *, int, float*, int, float, float const *, int, int*)
+                    1.19%  379.42us       135  2.8100us  2.5280us  3.4240us  void gemmSN_NN_kernel<float, int=128, int=2, int=4, int=8, int=3, int=4, cublasGemvTensorStridedBatched<float const >, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<float const , cublasGemvTensorStridedBatched<float const >, float>)
+                    1.05%  336.70us       222  1.5160us  1.3440us  2.0160us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_15log_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE0_clEvEUlfE_EEvS4_RKT_EUliE0_EEviT1_
+                    1.05%  336.61us       148  2.2740us  2.1440us  2.8790us  void CatArrayBatchedCopy<float, unsigned int, int=2>(float*, CatArrInputTensor<float, unsigned int>*, OutputTensorSizeStride<unsigned int, unsigned int=4>, int, unsigned int)
+                    1.04%  333.18us       222  1.5000us  1.2160us  2.2080us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZZZNS0_16fill_kernel_cudaERNS_14TensorIteratorEN3c106ScalarEENKUlvE_clEvENKUlvE2_clEvEUlvE_EEvS4_RKT_EUliE2_EEviT1_
+                    1.02%  324.32us        74  4.3820us  4.2560us  6.6560us  void trsv_ln_exec<float, unsigned int=32, unsigned int=32, unsigned int=4, bool=0>(int, float const *, int, float*, int, int*)
+                    1.01%  323.14us       222  1.4550us  1.1840us  1.9200us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZNS0_80_GLOBAL__N__56_tmpxft_00007b87_00000000_11_PowKernel_compute_75_cpp1_ii_1d77c5ca29pow_tensor_scalar_kernel_implIffEEvRNS_14TensorIteratorET0_EUlfE0_EEvS6_RKT_EUliE0_EEviT1_
+                    0.97%  308.54us        74  4.1690us  4.0640us  5.6320us  volta_sgemm_128x32_nt
+                    0.74%  236.70us        90  2.6300us  2.5600us  3.4240us  void gemmSN_TN_kernel<float, int=128, int=16, int=2, int=4, int=4, int=4, bool=0, cublasGemvTensorStridedBatched<float const >, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<float const , cublasGemvTensorStridedBatched<float const >, float>)
+                    0.74%  236.41us        87  2.7170us  2.3680us  3.4560us  void gemmSN_NN_kernel<float, int=128, int=2, int=4, int=8, int=4, int=4, cublasGemvTensorStridedBatched<float const >, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<float const , cublasGemvTensorStridedBatched<float const >, float>)
+                    0.73%  233.15us       148  1.5750us  1.3120us  2.3040us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_14ge_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SB_EUliE_EEviT1_
+                    0.73%  232.13us       148  1.5680us  1.3120us  2.2400us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_21copy_device_to_deviceERNS_14TensorIteratorEbENKUlvE_clEvENKUlvE2_clEvEUlfE_EEvS4_RKT_EUliE_EEviT1_
+                    0.71%  227.23us       148  1.5350us  1.3440us  2.0480us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_15add_kernel_cudaERNS_14TensorIteratorEN3c106ScalarEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SD_EUliE_EEviT1_
+                    0.63%  199.97us       148  1.3510us  1.3120us  1.6320us  void kernelPointwiseApply3<TensorEQOp<float, unsigned char>, unsigned char, float, float, unsigned int, int=1, int=1, int=1>(OffsetInfo<unsigned char, float, float>, OffsetInfo<TensorEQOp<float, unsigned char>, float, unsigned int>, OffsetInfo<unsigned char, float, int=1>, float, float)
+                    0.59%  189.57us       148  1.2800us  1.1200us  1.5360us  void kernelPointwiseApply1<TensorMaxValueOp<float>, float, unsigned int, int=1>(OffsetInfo<TensorMaxValueOp<float>, float, unsigned int>, float, float)
+                    0.57%  183.20us       148  1.2370us  1.1520us  1.3440us  dtrsv_init(int*)
+                    0.48%  152.00us        58  2.6200us  2.5920us  3.3600us  void gemmSN_TN_kernel<float, int=128, int=16, int=2, int=4, int=4, int=4, bool=1, cublasGemvTensorStridedBatched<float const >, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<float const , cublasGemvTensorStridedBatched<float const >, float>)
+                    0.41%  131.78us        74  1.7800us  1.7280us  2.1760us  void gemmk1_kernel<float, int=256, int=5, bool=0, bool=0, bool=1, bool=0, cublasGemvTensorStridedBatched<float const >, cublasGemvTensorStridedBatched<float>, float>(cublasGemmk1Params<float, float const , cublasGemvTensorStridedBatched<float const >, float>)
+                    0.33%  105.28us        74  1.4220us  1.3440us  1.6640us  void kernelPointwiseApply2<Tensor_exp_Float_Op, float, float, unsigned int, int=1, int=1>(OffsetInfo<float, unsigned int, int=1>, OffsetInfo<float, unsigned int, int=1>, unsigned int, Tensor_exp_Float_Op)
+                    0.32%  103.45us        74  1.3980us  1.3120us  2.0160us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_16sqrt_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE0_clEvEUlfE_EEvS4_RKT_EUliE0_EEviT1_
+                    0.27%  85.536us        74  1.1550us  1.1200us  1.2160us  dtrsv_init_up(int*, int)
+                    0.07%  21.887us         7  3.1260us  2.3680us  4.6720us  _ZN2at6native13reduce_kernelILi512ENS0_8ReduceOpIhNS0_14func_wrapper_tIhZNS0_14or_kernel_cudaERNS_14TensorIteratorEEUlhhE_EEjhLi4EEEEEvT0_
+                    0.04%  12.992us         2  6.4960us  6.4640us  6.5280us  void at::native::reduce_kernel<int=512, at::native::ReduceOp<float, at::native::WelfordOps<float, float, int, float, thrust::tuple<float, float, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>>, unsigned int, float, int=2>>(float)
+                    0.03%  8.8000us         4  2.2000us  1.3120us  3.0720us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_14ne_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS4_RKT_EUliE_EEviT1_
+                    0.02%  6.5280us         2  3.2640us  3.2640us  3.2640us  void kernelReduceAll<float, unsigned int, float, thrust::identity<float>, ReduceMax<float>, int=1>(TensorInfo<float, unsigned int>, unsigned int, float, float, thrust::identity<float>, float*)
+                    0.02%  6.1120us         2  3.0560us  3.0400us  3.0720us  _ZN2at6native18elementwise_kernelILi128ELi4EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_14gt_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SB_EUliE1_EEviT1_
+                    0.01%  4.5440us         2  2.2720us  2.2720us  2.2720us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_14lt_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SB_EUliE_EEviT1_
+                    0.01%  4.3200us         2  2.1600us  2.1120us  2.2080us  void kernelTransformReduceInnermostDimIndex<float, long, MaxValuePair<float, long>>(float*, long*, float*, unsigned int, unsigned int, thrust::pair<float, long>, float)
+                    0.01%  4.2240us         2  2.1120us  2.1120us  2.1120us  void kernelTransformReduceInnermostDimIndex<float, long, MinValuePair<float, long>>(float*, long*, float*, unsigned int, unsigned int, thrust::pair<float, long>, float)
+                    0.01%  3.0080us         2  1.5040us  1.4720us  1.5360us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZZZNS0_15abs_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlfE_EEvS4_RKT_EUliE0_EEviT1_
+                    0.01%  2.3360us         1  2.3360us  2.3360us  2.3360us  _ZN2at6native18elementwise_kernelILi512ELi1EZNS0_15gpu_kernel_implIZNS0_23gpu_kernel_with_scalarsIZZZNS0_14gt_kernel_cudaERNS_14TensorIteratorEENKUlvE_clEvENKUlvE2_clEvEUlffE_EEvS5_RKT_EUlfE0_EEvS5_SB_EUliE_EEviT1_
+      API calls:   69.93%  4.81492s       901  5.3440ms  5.3660us  4.74455s  cudaMalloc
+                   21.00%  1.44600s      1490  970.47us     491ns  850.81ms  cudaFree
+                    3.73%  256.57ms     16368  15.675us  6.5990us  707.76us  cudaLaunchKernel
+                    1.29%  89.118ms        75  1.1882ms  812.67us  1.7071ms  cudaHostAlloc
+                    1.10%  75.597ms    114219     661ns     249ns  684.90us  cudaGetDevice
+                    0.72%  49.768ms     53016     938ns     285ns  2.9787ms  cudaSetDevice
+                    0.69%  47.386ms      2239  21.164us  5.1810us  62.700us  cudaMemcpyAsync
+                    0.60%  41.433ms        74  559.90us  410.09us  707.44us  cudaFreeHost
+                    0.29%  20.254ms     25519     793ns     330ns  17.626us  cudaFuncSetAttribute
+                    0.12%  7.9931ms     17878     447ns     105ns  637.21us  cudaGetLastError
+                    0.08%  5.7913ms      1101  5.2600us  1.2410us  34.054us  cudaStreamSynchronize
+                    0.07%  4.9059ms       379  12.944us     121ns  690.12us  cuDeviceGetAttribute
+                    0.05%  3.5347ms       151  23.408us  14.129us  37.395us  cudaMemcpy
+                    0.05%  3.3176ms         2  1.6588ms  1.6457ms  1.6719ms  cudaGetDeviceProperties
+                    0.04%  2.9070ms      2564  1.1330us     419ns  3.9170us  cudaEventCreateWithFlags
+                    0.04%  2.6650ms         4  666.26us  507.35us  1.0576ms  cuDeviceTotalMem
+                    0.04%  2.6259ms      2663     986ns     410ns  12.689us  cudaEventDestroy
+                    0.03%  1.9044ms      3151     604ns     256ns  9.9730us  cudaDeviceGetAttribute
+                    0.02%  1.6728ms       369  4.5330us  1.5230us  18.576us  cudaEventQuery
+                    0.02%  1.5605ms       444  3.5140us  1.3370us  17.767us  cudaDeviceSynchronize
+                    0.02%  1.4467ms       592  2.4430us  1.0800us  4.2960us  cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+                    0.02%  1.3369ms       148  9.0330us  4.9000us  57.821us  cudaStreamCreate
+                    0.02%  1.0711ms       148  7.2370us  2.4490us  18.950us  cudaStreamDestroy
+                    0.01%  874.59us       370  2.3630us     922ns  3.7080us  cudaEventRecord
+                    0.01%  535.95us         4  133.99us  117.49us  165.82us  cuDeviceGetName
+                    0.00%  282.62us       148  1.9090us     779ns  4.1380us  cudaEventCreate
+                    0.00%  13.285us        21     632ns     137ns  2.8500us  cudaGetDeviceCount
+                    0.00%  8.7000us         1  8.7000us  8.7000us  8.7000us  cuDevicePrimaryCtxGetState
+                    0.00%  3.0470us         3  1.0150us     783ns  1.3760us  cuInit
+                    0.00%  2.9370us         1  2.9370us  2.9370us  2.9370us  cuDeviceGetPCIBusId
+                    0.00%  2.1810us         6     363ns     150ns     860ns  cuDeviceGetCount
+                    0.00%  2.1630us         5     432ns     140ns     687ns  cuDeviceGet
+                    0.00%  1.5610us         3     520ns     422ns     691ns  cuDriverGetVersion
+                    0.00%  1.2620us         4     315ns     219ns     533ns  cuDeviceGetUuid
